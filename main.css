@@ -44,9 +44,19 @@ body{
   max-width: 45%;
 }
 
+.infoTrainer{
+  /* margin-left: 50%; */
+  /* margin-top: 50%; */
+}
+
 #imageMove{
+  margin-left: 15%;
+  margin-top: 3%;
+}
+
+.ball{
+  max-width: 50%;
   margin-left: 35%;
-  margin-top: 5%;
 }
 /* ================================== */
 /* POKEMON INFO BOTTOM SECTION */

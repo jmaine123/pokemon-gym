@@ -41,11 +41,12 @@ body{
 
 /* PICTURE CSS */
 #redTrainer{
-  max-width: 45%;
+  max-width: 40%;
 }
 
-.infoTrainer{
-  /* margin-left: 50%; */
+.infoTrainer div{
+  width: 40px;
+  margin-left: 50%;
   /* margin-top: 50%; */
 }
 
@@ -69,4 +70,11 @@ body{
 
 .pokemon-grid div{
   border: 1px solid white;
+}
+
+.list{
+  color:white;
+  font-size: 2em;
+  line-height: 1;
+  padding: 0% 10%;;
 }

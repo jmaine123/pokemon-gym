@@ -1,10 +1,11 @@
-redsPokemon = [];
 ashsPokemon = [];
 stephaniesPokemon = [];
+redsPokemon = [];
 
 clickedTrainer = "";
 
 class Trainer {
+
   constructor(name) {
     this.name = name;
   }
@@ -13,7 +14,7 @@ class Trainer {
 
 trainer = new Trainer('Red');
 
-function showPokemon(trainerName, pkname) {
+function showPokemon(trainerName) {
   clickedPokemon = pkname;
 
   let pokedexInfoScreen = document.getElementById('pokedex-info');

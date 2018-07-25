@@ -15,6 +15,11 @@
   border: 1px solid white;
 }
 
+.trainer-poke{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+}
+
 .pokemon-grid{
   margin-top: 5%;
   display: grid;

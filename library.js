@@ -20,6 +20,18 @@ class Trainer {
 
 }
 
+document.getElementById('red').addEventListener('mouseover',function() {
+    loadPokemon('red', 'pikachu');
+    loadPokemon('red', 'mewtwo');
+    loadPokemon('red', 'rapidash');
+})
+
+document.getElementById('stephanie').addEventListener('mouseover',function() {
+    loadPokemon('stephanie', 'type-null');
+    loadPokemon('stephanie', 'palkia');
+    loadPokemon('stephanie', 'barbaracle');
+})
+
 var pikachuBall = document.getElementById('pikachu-ball');
 pikachuBall.addEventListener('click', function() {
   loadPokemon('red','pikachu');
@@ -47,7 +59,32 @@ function loadPokemon(trainer, pokemonName) {
         pokemon.abilities.push(abilityArray[obj]['ability']['name']);
       }
 
-      alert('Data Loaded');
+      p_arr = [pokemon.name, pokemon.hp, pokemon.atk, pokemon.def, abilityArray];
+
+      console.log(p_arr)
+
+
+      if(pokemonName == "pikachu" || pokemonName == "jolteon" || pokemonName =="type-null"){
+        for (obj in p_arr){
+          var stats = document.getElementsByClassName('pokemon1-stats')
+          stats[obj].innerHTML = p_arr[obj];
+
+        }
+      }
+      else if (pokemonName == "mewtwo" || pokemonName == "primeape" || pokemonName =="palkia") {
+        for (obj in p_arr){
+          var stats = document.getElementsByClassName('pokemon2-stats')
+          stats[obj].innerHTML = p_arr[obj];
+
+        }
+      }
+      else if(pokemonName == "rapidash" || pokemonName == "sharpedo" || pokemonName =="barbaracle"){
+        for (obj in p_arr){
+          var stats = document.getElementsByClassName('pokemon3-stats')
+          stats[obj].innerHTML = p_arr[obj];
+
+        }
+      }
 
     }
   };

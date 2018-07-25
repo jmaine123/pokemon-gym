@@ -8,11 +8,19 @@ class Trainer {
 
   constructor(name) {
     this.name = name;
+
+    if(name=="ash"){
+      this.pokemon=ashsPokemon;
+    } else if (name=="stephanie") {
+      this.pokemon=stephaniesPokemon;
+    } else if (name=="red") {
+      this.pokemon=redsPokemon;
+    }
   }
 
 }
 
-trainer = new Trainer('Red');
+trainer = new Trainer('red');
 
 function showPokemon(trainerName) {
   clickedPokemon = pkname;

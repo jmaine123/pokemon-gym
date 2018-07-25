@@ -1,0 +1,32 @@
+.container{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.trainer-grid{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 3%;
+  grid-template-rows: 90vh;
+}
+
+
+.trainer-grid div{
+  border: 1px solid white;
+}
+
+.pokemon-grid{
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 40vh;
+}
+
+.pokemon-grid div{
+  border: 1px solid white;
+}
+
+body{
+  background: url('gym_pic.JPG');
+  background-size: 100% 100%;
+}

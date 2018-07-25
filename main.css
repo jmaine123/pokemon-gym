@@ -3,7 +3,6 @@ body{
   background: url('images/gym_pic.JPG');
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 /* ========================================== */
 
@@ -43,11 +42,15 @@ body{
 /* PICTURE CSS */
 #redTrainer{
   max-width: 35%;
+  right: 25%;
 }
 
-.pokemon{
-  float: right;
-  color: #fff;
+img{
+  align: middle;
+}
+
+#imageMove{
+  right: 25%;
 }
 /* ================================== */
 /* POKEMON INFO BOTTOM SECTION */

@@ -22,7 +22,7 @@ class Trainer {
 
 var pikachuBall = document.getElementById('pikachu-ball');
 pikachuBall.addEventListener('click', function() {
-  loadPokemon();
+  loadPokemon('red','pikachu');
 });
 
 function loadPokemon(trainer, pokemonName) {
@@ -39,6 +39,8 @@ function loadPokemon(trainer, pokemonName) {
       pokemon.hp = parsedObject['stats'][5]['base_stat'];
       pokemon.atk = parsedObject['stats'][4]['base_stat'];
       pokemon.def = parsedObject['stats'][3]['base_stat'];
+
+      console.log(pokemon.name)
 
       let abilityArray = parsedObject['abilities'];
       for (obj in abilityArray) {

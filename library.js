@@ -32,6 +32,12 @@ document.getElementById('stephanie').addEventListener('mouseover',function() {
     loadPokemon('stephanie', 'barbaracle');
 })
 
+document.getElementById('ashCatchNone').addEventListener('mouseover',function() {
+    loadPokemon('ash', 'jolteon');
+    loadPokemon('ash', 'primeape');
+    loadPokemon('ash', 'scizor');
+})
+
 var pikachuBall = document.getElementById('pikachu-ball');
 pikachuBall.addEventListener('click', function() {
   loadPokemon('red','pikachu');
@@ -78,7 +84,7 @@ function loadPokemon(trainer, pokemonName) {
 
         }
       }
-      else if(pokemonName == "rapidash" || pokemonName == "sharpedo" || pokemonName =="barbaracle"){
+      else if(pokemonName == "rapidash" || pokemonName == "scizor" || pokemonName =="barbaracle"){
         for (obj in p_arr){
           var stats = document.getElementsByClassName('pokemon3-stats')
           stats[obj].innerHTML = p_arr[obj];

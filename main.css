@@ -71,3 +71,10 @@ body{
 .pokemon-grid div{
   border: 1px solid white;
 }
+
+.list{
+  color:white;
+  font-size: 2em;
+  line-height: 1;
+  padding: 0% 10%;;
+}

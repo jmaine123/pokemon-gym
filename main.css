@@ -41,16 +41,12 @@ body{
 
 /* PICTURE CSS */
 #redTrainer{
-  max-width: 35%;
-  right: 25%;
-}
-
-img{
-  align: middle;
+  max-width: 45%;
 }
 
 #imageMove{
-  right: 25%;
+  margin-left: 35%;
+  margin-top: 5%;
 }
 /* ================================== */
 /* POKEMON INFO BOTTOM SECTION */

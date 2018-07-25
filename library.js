@@ -22,12 +22,12 @@ class Trainer {
 
 var pikachuBall = document.getElementById('pikachu-ball');
 pikachuBall.addEventListener('click', function() {
-  loadPokemon('red','pikachu');
+  loadPokemon('red', 'pikachu');
 });
 
 function loadPokemon(trainer, pokemonName) {
   let pokemon = {
-    abilities:[]
+    abilities: []
   };
 
   let xhttp = new XMLHttpRequest();
@@ -40,7 +40,7 @@ function loadPokemon(trainer, pokemonName) {
       pokemon.atk = parsedObject['stats'][4]['base_stat'];
       pokemon.def = parsedObject['stats'][3]['base_stat'];
 
-      console.log(pokemon.name)
+      console.log(pokemon.name);
 
       let abilityArray = parsedObject['abilities'];
       for (obj in abilityArray) {
@@ -53,6 +53,15 @@ function loadPokemon(trainer, pokemonName) {
   };
   xhttp.open("GET", `https://raw.githubusercontent.com/stephanie-vitalherne/data/master/${pokemonName}.json`, true);
   xhttp.send();
+
+  if (trainer == 'red') {
+    redsPokemon.push(pokemon);
+  } else if(trainer == 'stephanie') {
+    stephaniesPokemon.push(pokemon);
+  } else if(trainer == 'ash') {
+    ashsPokemon.push(pokemon);
+  }
+
 }
 
 
@@ -95,24 +104,24 @@ function loadPokemon(trainer, pokemonName) {
 //   console.log(allPokemon);
 // }
 //
-// function updateScreen(currentPokemon) {
-//   let statList = document.getElementById('stat-list');
-//   let listItems = document.getElementsByClassName('list-item');
-//   let pokedexImage = document.getElementById('pokedex-image');
-//   let pokedexInfoScreen = document.getElementById('pokedex-info');
-//
-//   for (obj in allPokemon) {
-//     if (allPokemon[obj]['name'] == currentPokemon) {
-//       pokedexInfoScreen.style.display = 'block';
-//
-//       pokedexImage.src = "images/" + `${currentPokemon}.gif`;
-//       listItems[0].innerHTML = "Name: " + allPokemon[obj]['name'].toUpperCase();
-//       listItems[1].innerHTML = "Base Attack: " + allPokemon[obj]['atk'];
-//       listItems[2].innerHTML = "Base Defense: " + allPokemon[obj]['def'];
-//       listItems[3].innerHTML = "Base HP: " + allPokemon[obj]['hp'];
-//       listItems[4].innerHTML = "Abilities: " + allPokemon[obj]['abilities'];
-//
-//       break;
-//     }
-//   }
-// }
+function updateScreen(currentPokemon) {
+  let statList = document.getElementById('stat-list');
+  let listItems = document.getElementsByClassName('list-item');
+  let pokedexImage = document.getElementById('pokedex-image');
+  let pokedexInfoScreen = document.getElementById('pokedex-info');
+
+  for (obj in allPokemon) {
+    if (allPokemon[obj]['name'] == currentPokemon) {
+      pokedexInfoScreen.style.display = 'block';
+
+      pokedexImage.src = "images/" + `${currentPokemon}.gif`;
+      listItems[0].innerHTML = "Name: " + allPokemon[obj]['name'].toUpperCase();
+      listItems[1].innerHTML = "Base Attack: " + allPokemon[obj]['atk'];
+      listItems[2].innerHTML = "Base Defense: " + allPokemon[obj]['def'];
+      listItems[3].innerHTML = "Base HP: " + allPokemon[obj]['hp'];
+      listItems[4].innerHTML = "Abilities: " + allPokemon[obj]['abilities'];
+
+      break;
+    }
+  }
+}

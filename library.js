@@ -20,19 +20,19 @@ class Trainer {
 
 }
 
-document.getElementById('red').addEventListener('mouseover',function() {
+document.getElementById('red').addEventListener('click',function() {
     loadPokemon('red', 'pikachu');
     loadPokemon('red', 'mewtwo');
     loadPokemon('red', 'rapidash');
 })
 
-document.getElementById('stephanie').addEventListener('mouseover',function() {
+document.getElementById('stephanie').addEventListener('click',function() {
     loadPokemon('stephanie', 'type-null');
     loadPokemon('stephanie', 'palkia');
     loadPokemon('stephanie', 'barbaracle');
 })
 
-document.getElementById('ashCatchNone').addEventListener('mouseover',function() {
+document.getElementById('ashCatchNone').addEventListener('click',function() {
     loadPokemon('ash', 'jolteon');
     loadPokemon('ash', 'primeape');
     loadPokemon('ash', 'scizor');
@@ -79,11 +79,7 @@ function loadPokemon(trainer, pokemonName) {
         pokemon.abilities.push(abilityArray[obj]['ability']['name']);
       }
 
-<<<<<<< HEAD
       p_arr = [pokemon.name, 'HP: ' + pokemon.hp, 'Attack: '+ pokemon.atk, 'Defense: ' +pokemon.def, 'Abilities: ' +pokemon.abilities];
-=======
-      p_arr = [pokemon.name, pokemon.hp, pokemon.atk, pokemon.def, pokemon.abilities];
->>>>>>> 86e1edacc144e440bb56e67dc136f7b2ac3ea2b6
 
       console.log(abilityArray)
 
@@ -95,6 +91,7 @@ function loadPokemon(trainer, pokemonName) {
 
         }
       }
+
       else if (pokemonName == "mewtwo" || pokemonName == "primeape" || pokemonName =="palkia") {
         for (obj in p_arr){
           var stats = document.getElementsByClassName('pokemon2-stats')
@@ -102,6 +99,7 @@ function loadPokemon(trainer, pokemonName) {
 
         }
       }
+
       else if(pokemonName == "rapidash" || pokemonName == "scizor" || pokemonName =="barbaracle"){
         for (obj in p_arr){
           var stats = document.getElementsByClassName('pokemon3-stats')

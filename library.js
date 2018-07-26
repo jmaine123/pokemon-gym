@@ -29,6 +29,7 @@ var infoGrid = document.getElementsByClassName('move');
 var trainerRed = document.getElementById('red');
 
 trainerRed.addEventListener('click',function() {
+  
     loadPokemon('red', 'pikachu');
     loadPokemon('red', 'mewtwo');
     loadPokemon('red', 'rapidash');
@@ -42,7 +43,7 @@ trainerRed.addEventListener('click',function() {
 
     var pikachuBall = document.getElementById('pikachu-ball');
     pikachuBall.addEventListener('click', function() {
-      pokemonOne.style.backgroundImage = "url('images/pikachu_lightning.gif')"
+      pokemonOne.style.backgroundImage = "url('images/pikachu_lightning.gif')";
       pokemonOne.style.backgroundSize = '100% 100%';
     });
 
@@ -54,8 +55,8 @@ trainerRed.addEventListener('click',function() {
 
     var rapidash = document.getElementById('rapidash-ball');
     rapidash.addEventListener('click', function() {
-      pokemon3.style.backgroundImage = "url('images/rapidash.gif')"
-      pokemon3.style.backgroundSize = '100% 100%';
+      pokemonThree.style.backgroundImage = "url('images/rapidash.gif')"
+      pokemonThree.style.backgroundSize = '100% 100%';
     });
 });
 

@@ -28,37 +28,6 @@ var infoGrid = document.getElementsByClassName('move');
 
 var trainerRed = document.getElementById('red');
 
-<<<<<<< HEAD
-trainerRed.addEventListener('click',function() {
-    loadPokemon('red', 'pikachu');
-    loadPokemon('red', 'mewtwo');
-    loadPokemon('red', 'rapidash');
-
-    pokemonOne.style.backgroundColor = '#D76475';
-    pokemonTwo.style.backgroundColor = '#D76475';
-    pokemonThree.style.backgroundColor = '#D76475';
-
-    trainerRed.classList.remove("blur");
-    infoGrid[0].classList.remove("hidden");
-
-    var pikachuBall = document.getElementById('pikachu-ball');
-    pikachuBall.addEventListener('click', function() {
-      pokemonOne.style.backgroundImage = "url('images/pikachu_lightning.gif')"
-      pokemonOne.style.backgroundSize = '100% 100%';
-    });
-
-    var mewtwo = document.getElementById('mewtwo-ball');
-    mewtwo.addEventListener('click', function() {
-      pokemonTwo.style.backgroundImage = "url('images/mewtwo_fire.gif')"
-      pokemonTwo.style.backgroundSize = '100% 100%';
-    });
-
-    var rapidash = document.getElementById('rapidash-ball');
-    rapidash.addEventListener('click', function() {
-      pokemonThree.style.backgroundImage = "url('images/rapidash.gif')"
-      pokemonThree.style.backgroundSize = '100% 100%';
-    });
-=======
 trainerRed.addEventListener('click', function() {
 
   loadPokemon('red', 'pikachu');
@@ -93,7 +62,6 @@ trainerRed.addEventListener('click', function() {
     pokemonThree.style.backgroundImage = "url('images/rapidash.gif')"
     pokemonThree.style.backgroundSize = '100% 100%';
   });
->>>>>>> abd6651ccceccdc7b19d6632f078ce9eae793ec1
 });
 
 var trainerStephanie = document.getElementById('stephanie');
@@ -102,7 +70,7 @@ trainerStephanie.addEventListener('click', function() {
   loadPokemon('stephanie', 'type-null');
   loadPokemon('stephanie', 'palkia');
   loadPokemon('stephanie', 'barbaracle');
-
+  
   pokemonOne.style.backgroundColor = '#4fd7f4';
   pokemonTwo.style.backgroundColor = '#4fd7f4';
   pokemonThree.style.backgroundColor = '#4fd7f4';

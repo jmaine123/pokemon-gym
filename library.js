@@ -20,22 +20,38 @@ class Trainer {
 
 }
 
+var pokemonOne = document.getElementById('pokemon1');
+var pokemonTwo = document.getElementById('pokemon2');
+var pokemonThree = document.getElementById('pokemon3');
+
 document.getElementById('red').addEventListener('click',function() {
     loadPokemon('red', 'pikachu');
     loadPokemon('red', 'mewtwo');
     loadPokemon('red', 'rapidash');
+
+    pokemonOne.style.backgroundColor = '#D76475';
+    pokemonTwo.style.backgroundColor = '#D76475';
+    pokemonThree.style.backgroundColor = '#D76475';
 })
 
 document.getElementById('stephanie').addEventListener('click',function() {
     loadPokemon('stephanie', 'type-null');
     loadPokemon('stephanie', 'palkia');
     loadPokemon('stephanie', 'barbaracle');
+
+    pokemonOne.style.backgroundColor = '#4fd7f4';
+    pokemonTwo.style.backgroundColor = '#4fd7f4';
+    pokemonThree.style.backgroundColor = '#4fd7f4';
 })
 
 document.getElementById('ashCatchNone').addEventListener('click',function() {
     loadPokemon('ash', 'jolteon');
     loadPokemon('ash', 'primeape');
     loadPokemon('ash', 'scizor');
+
+    pokemonOne.style.backgroundColor = '#00e68a';
+    pokemonTwo.style.backgroundColor = '#00e68a';
+    pokemonThree.style.backgroundColor = '#00e68a';
 })
 
 var pikachuBall = document.getElementById('pikachu-ball');

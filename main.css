@@ -12,14 +12,6 @@ body{
   margin: 0 auto;
 }
 
-.trainer-grid{
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-gap: 3%;
-  grid-template-rows: 90vh;
-}
-
-
 .trainer-grid div{
   border: 1px solid white;
 }
@@ -45,14 +37,17 @@ body{
 }
 
 .infoTrainer div{
-  width: 40px;
   margin-left: 50%;
-  /* margin-top: 50%; */
+  margin-top: 50%;
 }
 
 #imageMove{
-  margin-left: 15%;
+  margin-left: 27%;
   margin-top: 3%;
+}
+
+.move{
+  /* margin-left: 59%; */
 }
 
 .ball{

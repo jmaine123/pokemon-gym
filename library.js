@@ -75,6 +75,24 @@ rapidash.addEventListener('click', function() {
   thirdPokeBackground.style.backgroundSize = '100% 100%';
 });
 
+var typeNull = document.getElementById('type-null-ball');
+typeNull.addEventListener('click', function() {
+  firstPokeBackground.style.backgroundImage = "url('images/type-null.gif')"
+  firstPokeBackground.style.backgroundSize = '100% 100%';
+});
+
+var palkia = document.getElementById('palkia-ball');
+palkia.addEventListener('click', function() {
+  secondPokeBackground.style.backgroundImage = "url('images/palkia.gif')"
+  secondPokeBackground.style.backgroundSize = '100% 100%';
+});
+
+var barbaracle = document.getElementById('barbaracle-ball');
+barbaracle.addEventListener('click', function() {
+  thirdPokeBackground.style.backgroundImage = "url('images/barbaracle.gif')"
+  thirdPokeBackground.style.backgroundSize = '100% 100%';
+});
+
 function loadPokemon(trainer, pokemonName) {
   let pokemon = {
     abilities: []

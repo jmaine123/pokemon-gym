@@ -54,8 +54,8 @@ trainerRed.addEventListener('click',function() {
 
     var rapidash = document.getElementById('rapidash-ball');
     rapidash.addEventListener('click', function() {
-      pokemon3.style.backgroundImage = "url('images/rapidash.gif')"
-      pokemon3.style.backgroundSize = '100% 100%';
+      pokemonThree.style.backgroundImage = "url('images/rapidash.gif')"
+      pokemonThree.style.backgroundSize = '100% 100%';
     });
 });
 

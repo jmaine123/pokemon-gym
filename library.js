@@ -40,7 +40,23 @@ document.getElementById('ashCatchNone').addEventListener('mouseover',function() 
 
 var pikachuBall = document.getElementById('pikachu-ball');
 pikachuBall.addEventListener('click', function() {
-  loadPokemon('red', 'pikachu');
+  var firstPokeBackground = document.getElementById('pokemon1')
+  firstPokeBackground.style.backgroundImage = "url('images/pikachu_lightning.gif')"
+  firstPokeBackground.style.backgroundSize = '100% 100%';
+});
+
+var mewtwo = document.getElementById('mewtwo-ball');
+mewtwo.addEventListener('click', function() {
+  var secondPokeBackground = document.getElementById('pokemon2')
+  secondPokeBackground.style.backgroundImage = "url('images/mewtwo_fire.gif')"
+  secondPokeBackground.style.backgroundSize = '100% 100%';
+});
+
+var rapidash = document.getElementById('rapidash-ball');
+rapidash.addEventListener('click', function() {
+  var thirdPokeBackground = document.getElementById('pokemon3')
+  thirdPokeBackground.style.backgroundImage = "url('images/rapidash.gif')"
+  thirdPokeBackground.style.backgroundSize = '100% 100%';
 });
 
 function loadPokemon(trainer, pokemonName) {
@@ -52,22 +68,20 @@ function loadPokemon(trainer, pokemonName) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       let parsedObject = JSON.parse(this.responseText);
-      console.log(parsedObject);
       pokemon.name = parsedObject['name'];
       pokemon.hp = parsedObject['stats'][5]['base_stat'];
       pokemon.atk = parsedObject['stats'][4]['base_stat'];
       pokemon.def = parsedObject['stats'][3]['base_stat'];
 
-      console.log(pokemon.name);
 
       let abilityArray = parsedObject['abilities'];
       for (obj in abilityArray) {
         pokemon.abilities.push(abilityArray[obj]['ability']['name']);
       }
 
-      p_arr = [pokemon.name, pokemon.hp, pokemon.atk, pokemon.def, abilityArray];
+      p_arr = [pokemon.name, pokemon.hp, pokemon.atk, pokemon.def, pokemon.abilities[0]];
 
-      console.log(p_arr)
+      console.log(abilityArray)
 
 
       if(pokemonName == "pikachu" || pokemonName == "jolteon" || pokemonName =="type-null"){
@@ -97,11 +111,11 @@ function loadPokemon(trainer, pokemonName) {
   xhttp.open("GET", `https://raw.githubusercontent.com/stephanie-vitalherne/data/master/${pokemonName}.json`, true);
   xhttp.send();
 
-  if (trainer == 'red') {
+  if (trainer == 'red' && redsPokemon.length !== 3) {
     redsPokemon.push(pokemon);
-  } else if(trainer == 'stephanie') {
+  } else if(trainer == 'stephanie' && stephaniesPokemon.length !== 3) {
     stephaniesPokemon.push(pokemon);
-  } else if(trainer == 'ash') {
+  } else if(trainer == 'ash' && ashsPokemon.length !== 3) {
     ashsPokemon.push(pokemon);
   }
 

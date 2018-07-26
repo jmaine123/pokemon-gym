@@ -73,8 +73,17 @@ body{
 }
 
 .list{
-  color:white;
+  color:transparent;
   font-size: 2em;
   line-height: 1;
   padding: 0% 10%;;
+}
+
+.list:hover{
+  color: white;
+  background: rgba(0, 0, 0, .5)
+}
+
+#pokemon1{
+  background-repeat: no-repeat;
 }

@@ -79,7 +79,7 @@ function loadPokemon(trainer, pokemonName) {
         pokemon.abilities.push(abilityArray[obj]['ability']['name']);
       }
 
-      p_arr = [pokemon.name, pokemon.hp, pokemon.atk, pokemon.def, pokemon.abilities[0]];
+      p_arr = [pokemon.name, 'HP: ' + pokemon.hp, 'Attack: '+ pokemon.atk, 'Defense: ' +pokemon.def, 'Abilities: ' +pokemon.abilities];
 
       console.log(abilityArray)
 

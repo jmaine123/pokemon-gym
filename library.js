@@ -59,6 +59,24 @@ rapidash.addEventListener('click', function() {
   thirdPokeBackground.style.backgroundSize = '100% 100%';
 });
 
+var typeNull = document.getElementById('type-null-ball');
+typeNull.addEventListener('click', function() {
+  firstPokeBackground.style.backgroundImage = "url('images/type-null.gif')"
+  firstPokeBackground.style.backgroundSize = '100% 100%';
+});
+
+var palkia = document.getElementById('palkia-ball');
+palkia.addEventListener('click', function() {
+  secondPokeBackground.style.backgroundImage = "url('images/palkia.gif')"
+  secondPokeBackground.style.backgroundSize = '100% 100%';
+});
+
+var barbaracle = document.getElementById('barbaracle-ball');
+barbaracle.addEventListener('click', function() {
+  thirdPokeBackground.style.backgroundImage = "url('images/barbaracle.gif')"
+  thirdPokeBackground.style.backgroundSize = '100% 100%';
+});
+
 function loadPokemon(trainer, pokemonName) {
   let pokemon = {
     abilities: []
@@ -79,11 +97,7 @@ function loadPokemon(trainer, pokemonName) {
         pokemon.abilities.push(abilityArray[obj]['ability']['name']);
       }
 
-<<<<<<< HEAD
       p_arr = [pokemon.name, 'HP: ' + pokemon.hp, 'Attack: '+ pokemon.atk, 'Defense: ' +pokemon.def, 'Abilities: ' +pokemon.abilities];
-=======
-      p_arr = [pokemon.name, pokemon.hp, pokemon.atk, pokemon.def, pokemon.abilities];
->>>>>>> 86e1edacc144e440bb56e67dc136f7b2ac3ea2b6
 
       console.log(abilityArray)
 

@@ -37,11 +37,9 @@ trainerRed.addEventListener('click',function() {
     pokemonTwo.style.backgroundColor = '#D76475';
     pokemonThree.style.backgroundColor = '#D76475';
 
-<<<<<<< HEAD
     trainerRed.classList.remove("blur");
     infoGrid[0].classList.remove("hidden");
-});
-=======
+
     var pikachuBall = document.getElementById('pikachu-ball');
     pikachuBall.addEventListener('click', function() {
       pokemonOne.style.backgroundImage = "url('images/pikachu_lightning.gif')"
@@ -60,7 +58,6 @@ trainerRed.addEventListener('click',function() {
       pokemon3.style.backgroundSize = '100% 100%';
     });
 })
->>>>>>> 218abc0111edd9b0df8efb51aa92628ef8a2aedd
 
 document.getElementById('stephanie').addEventListener('click',function() {
     loadPokemon('stephanie', 'type-null');
@@ -70,9 +67,6 @@ document.getElementById('stephanie').addEventListener('click',function() {
     pokemonOne.style.backgroundColor = '#4fd7f4';
     pokemonTwo.style.backgroundColor = '#4fd7f4';
     pokemonThree.style.backgroundColor = '#4fd7f4';
-<<<<<<< HEAD
-});
-=======
 
     var typeNull = document.getElementById('type-null-ball');
     typeNull.addEventListener('click', function() {
@@ -92,7 +86,6 @@ document.getElementById('stephanie').addEventListener('click',function() {
       pokemonThree.style.backgroundSize = '100% 100%';
     });
 })
->>>>>>> 218abc0111edd9b0df8efb51aa92628ef8a2aedd
 
 document.getElementById('ashCatchNone').addEventListener('click',function() {
     loadPokemon('ash', 'jolteon');
@@ -102,9 +95,6 @@ document.getElementById('ashCatchNone').addEventListener('click',function() {
     pokemonOne.style.backgroundColor = '#00e68a';
     pokemonTwo.style.backgroundColor = '#00e68a';
     pokemonThree.style.backgroundColor = '#00e68a';
-<<<<<<< HEAD
-});
-=======
 
     var jolteon = document.getElementById('jolteon-ball');
     jolteon.addEventListener('click', function() {
@@ -124,7 +114,6 @@ document.getElementById('ashCatchNone').addEventListener('click',function() {
       pokemonThree.style.backgroundSize = '100% 100%';
     });
 })
->>>>>>> 218abc0111edd9b0df8efb51aa92628ef8a2aedd
 
 // var pikachuBall = document.getElementById('pikachu-ball');
 // pikachuBall.addEventListener('click', function() {

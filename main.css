@@ -38,15 +38,14 @@ body{
 /* PICTURE CSS */
 #redTrainer{
   max-width: 44%;
+  /* box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 3px 1px -2px rgba(0,0,0,0.22),0 1px 5px 0 rgba(0,0,0,0.3);
+  transition: -webkit-box-shadow .25s; */
 }
 
-#lassTrainer{
-  max-width: 50%;
+#lassTrainer, #ashTrainer{
+  max-width: 52%;
 }
 
-#ashTrainer{
-  max-width: 50%;
-}
 
 #imageMove{
   margin-left: 15%;
@@ -69,20 +68,20 @@ body{
 }
 
 .ball{
-  max-width: 45%;
+  max-width: 42%;
   margin-left: 35%;
-  margin-top: 25%;
+  margin-top: 22%;
 }
 
 .lassBall{
-  max-width: 45%;
-  margin-top: 50%;
+  max-width: 42%;
+  margin-top: 25%;
   margin-left: 35%;
 }
 .ashBall{
-  max-width: 45%;
-  margin-top: 40%;
-  margin-left: 26%;
+  max-width: 42%;
+  margin-top: 22.45%;
+  margin-left: 25%;
 }
 
 /* ================================== */
@@ -110,8 +109,4 @@ body{
 .list:hover{
   color: white;
   background: rgba(0, 0, 0, .5)
-}
-
-#pokemon1{
-  background-repeat: no-repeat;
 }

@@ -1,5 +1,5 @@
 /* WHOLE WEBSITE */
-body{
+body {
   background: url('images/gym_pic.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,32 +8,26 @@ body{
 /* ========================================== */
 
 /* TRAINER TOP SECTION */
-.container{
+.container {
   max-width: 90%;
   margin: 0 auto;
 }
 
-.trainer-grid{
+.trainer-grid {
   position: absolute;
 }
 
-.trainer-grid div{
-  /* border: 1px solid white; */
-}
-
-
-#red, #stephanie, #ashCatchNone{
+#red, #stephanie, #ashCatchNone {
   display: grid;
   grid-template-columns: 85%;
   grid-template-rows: 75% 25%;
-  -webkit-box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.87);
-  -moz-box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.87);
-  box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.87);
+  -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.87);
   border-radius: 7%;
 }
 
-
-.pokemon{
+.pokemon {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 85%;
@@ -41,53 +35,44 @@ body{
 /* ================================= */
 
 /* PICTURE CSS */
-#redTrainer{
+#redTrainer {
   max-width: 44%;
 }
 
-.blur{
-  filter: blur(1px);
+.blur {
+  filter: blur(9px);
 }
 
-.noblur{
-  filter: none;
-}
-
-.hidden{
+.hidden {
   opacity: 0;
 }
 
-.reveal{
-  opacity: 1;
-}
-
-#lassTrainer, #ashTrainer{
+#lassTrainer, #ashTrainer {
   max-width: 52%;
 }
 
-
-#redMove{
+#redMove {
   margin-left: 15%;
   margin-top: 3%;
   padding-top: 1.4%;
 }
 
-#lassMove{
+#lassMove {
   margin-left: 5.16%;
   margin-top: 3%;
   padding-top: 1.4%;
 }
 
-#ashMove{
+#ashMove {
   margin-left: 9%;
   margin-top: 3%;
   padding-top: 1.4%;
 }
 
-.move{
+.move {
   position: fixed;
   margin-left: 12%;
-  bottom:85%;
+  bottom: 85%;
   color: #fc7148;
   letter-spacing: 0.8px;
   background: rgba(0, 0, 0, .35);
@@ -95,27 +80,28 @@ body{
   padding: 0.62%;
 }
 
-.ball{
+.ball {
   max-width: 42%;
   margin-left: 35%;
   margin-top: 22%;
 }
 
-.lassBall{
+.lassBall {
   max-width: 42%;
   margin-top: 25%;
   margin-left: 40%;
 }
-.ashBall{
+
+.ashBall {
   max-width: 42%;
   margin-top: 21.45%;
   margin-left: 40%;
   padding-bottom: 20px;
 }
-
 /* ================================== */
+
 /* POKEMON INFO BOTTOM SECTION */
-.pokemon-grid{
+.pokemon-grid {
   margin-top: 3.52%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -123,8 +109,7 @@ body{
   grid-gap: 0.5%;
 }
 
-.pokemon-grid div{
-  /* border: 1px solid white; */
+.pokemon-grid div {
   border-bottom-right-radius: 10%;
   border-top-left-radius: 10%;
 }
@@ -138,22 +123,22 @@ body{
   text-transform: capitalize;
 }
 
-.list:hover{
-  color: white;
-  background: rgba(0, 0, 0, .5);
+.list:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
   border-bottom-right-radius: 10%;
   border-top-left-radius: 10%;
 }
 
-#title{
+#title {
   position: relative;
   bottom: 25%;
   left: 35%;
   z-index: -1;
 }
 
-h1{
+h1 {
   font-size: 5em;
   color: #fff;
-  text-shadow: 1px 1px 5px #000, 5px 5px 100px #eeee10;
+  text-shadow: 1px 1px 5px #000, 5px 5px 80px blue;
 }

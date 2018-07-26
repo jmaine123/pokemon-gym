@@ -13,12 +13,8 @@ body{
 }
 
 .trainer-grid{
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-gap: 3%;
-  grid-template-rows: 90vh;
+  position: absolute;
 }
-
 
 .trainer-grid div{
   border: 1px solid white;
@@ -28,7 +24,7 @@ body{
 #red, #stephanie, #ashCatchNone{
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 75% 25%;
 }
 
 
@@ -41,28 +37,58 @@ body{
 
 /* PICTURE CSS */
 #redTrainer{
-  max-width: 40%;
+  max-width: 44%;
 }
 
-.infoTrainer div{
-  width: 40px;
-  margin-left: 50%;
-  /* margin-top: 50%; */
+#lassTrainer{
+  max-width: 50%;
+}
+
+#ashTrainer{
+  max-width: 50%;
 }
 
 #imageMove{
   margin-left: 15%;
   margin-top: 3%;
+  padding-top: 1.4%;
+}
+
+#lassMove{
+  margin-left: 7%;
+  margin-top: 3%;
+  padding-top: 1.4%;
+}
+
+.move{
+  position: fixed;
+  margin-left: 13%;
+  bottom:85%;
+  color: #fc7148;
+  letter-spacing: 0.8px;
 }
 
 .ball{
-  max-width: 50%;
+  max-width: 45%;
+  margin-left: 35%;
+  margin-top: 25%;
+}
+
+.lassBall{
+  max-width: 45%;
+  margin-top: 50%;
   margin-left: 35%;
 }
+.ashBall{
+  max-width: 45%;
+  margin-top: 40%;
+  margin-left: 26%;
+}
+
 /* ================================== */
 /* POKEMON INFO BOTTOM SECTION */
 .pokemon-grid{
-  margin-top: 5%;
+  margin-top: 2%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 30vh;
@@ -72,11 +98,13 @@ body{
   border: 1px solid white;
 }
 
-.list{
-  color:transparent;
-  font-size: 2em;
-  line-height: 1;
-  padding: 0% 10%;;
+.list {
+  color: transparent;
+  font-size: 1.13em;
+  line-height: 1.6;
+  padding: 7% 10%;
+  list-style-type: none;
+  text-transform: capitalize;
 }
 
 .list:hover{

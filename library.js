@@ -40,21 +40,21 @@ document.getElementById('ashCatchNone').addEventListener('mouseover',function() 
 
 var pikachuBall = document.getElementById('pikachu-ball');
 pikachuBall.addEventListener('click', function() {
-  var firstPokeBackground = document.getElementById('pokemon1')
+  firstPokeBackground = document.getElementById('pokemon1')
   firstPokeBackground.style.backgroundImage = "url('images/pikachu_lightning.gif')"
   firstPokeBackground.style.backgroundSize = '100% 100%';
 });
 
 var mewtwo = document.getElementById('mewtwo-ball');
 mewtwo.addEventListener('click', function() {
-  var secondPokeBackground = document.getElementById('pokemon2')
+  secondPokeBackground = document.getElementById('pokemon2')
   secondPokeBackground.style.backgroundImage = "url('images/mewtwo_fire.gif')"
   secondPokeBackground.style.backgroundSize = '100% 100%';
 });
 
 var rapidash = document.getElementById('rapidash-ball');
 rapidash.addEventListener('click', function() {
-  var thirdPokeBackground = document.getElementById('pokemon3')
+  thirdPokeBackground = document.getElementById('pokemon3')
   thirdPokeBackground.style.backgroundImage = "url('images/rapidash.gif')"
   thirdPokeBackground.style.backgroundSize = '100% 100%';
 });

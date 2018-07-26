@@ -28,11 +28,20 @@ var infoGrid = document.getElementsByClassName('move');
 
 var trainerRed = document.getElementById('red');
 
-trainerRed.addEventListener('click', function() {
+var trainerRedpic = document.getElementById('redTrainer');
+
+
+
+trainerRedpic.addEventListener('click', function() {
 
   loadPokemon('red', 'pikachu');
   loadPokemon('red', 'mewtwo');
   loadPokemon('red', 'rapidash');
+
+  pokemonOne.removeAttribute('style');
+  pokemonTwo.removeAttribute('style');
+  pokemonThree.removeAttribute('style');
+
 
   pokemonOne.style.backgroundColor = '#D76475';
   pokemonTwo.style.backgroundColor = '#D76475';
@@ -47,7 +56,10 @@ trainerRed.addEventListener('click', function() {
 
   var pikachuBall = document.getElementById('pikachu-ball');
   pikachuBall.addEventListener('click', function() {
-    pokemonOne.style.backgroundImage = "url('images/pikachu_lightning.gif')";
+    console.log('this is pikachu')
+    pokemonOne.setAttribute('style', 'background-image: url("images/pikachu_lightning.gif")');
+    console.log('this is pikachu')
+    // pokemonOne.style.backgroundImage = "url('images/pikachu_lightning.gif')";
     pokemonOne.style.backgroundSize = '100% 100%';
   });
 
@@ -64,13 +76,26 @@ trainerRed.addEventListener('click', function() {
   });
 });
 
+// var pikachuBall = document.getElementById('pikachu-ball');
+// pikachuBall.addEventListener('click', function() {
+//   pokemonOne.setAttribute('style', 'background-image: url("images/pikachu_lightning.gif")');
+//   // pokemonOne.style.backgroundImage = "url('images/pikachu_lightning.gif')";
+//   pokemonOne.style.backgroundSize = '100% 100%';
+// });
+
 var trainerStephanie = document.getElementById('stephanie');
 
-trainerStephanie.addEventListener('click', function() {
+var trainerStephaniepic= document.getElementById('lassTrainer');
+
+trainerStephaniepic.addEventListener('click', function() {
   loadPokemon('stephanie', 'type-null');
   loadPokemon('stephanie', 'palkia');
   loadPokemon('stephanie', 'barbaracle');
-  
+
+  pokemonOne.removeAttribute('style');
+  pokemonTwo.removeAttribute('style');
+  pokemonThree.removeAttribute('style');
+
   pokemonOne.style.backgroundColor = '#4fd7f4';
   pokemonTwo.style.backgroundColor = '#4fd7f4';
   pokemonThree.style.backgroundColor = '#4fd7f4';
@@ -103,10 +128,16 @@ trainerStephanie.addEventListener('click', function() {
 
 var trainerAsh = document.getElementById('ashCatchNone');
 
-trainerAsh.addEventListener('click', function() {
+var trainerAshPic = document.getElementById('ashTrainer')
+
+trainerAshPic.addEventListener('click', function() {
   loadPokemon('ash', 'jolteon');
   loadPokemon('ash', 'primeape');
   loadPokemon('ash', 'scizor');
+
+  pokemonOne.removeAttribute('style');
+  pokemonTwo.removeAttribute('style');
+  pokemonThree.removeAttribute('style');
 
   pokemonOne.style.backgroundColor = '#00e68a';
   pokemonTwo.style.backgroundColor = '#00e68a';

@@ -92,10 +92,13 @@ trainerStephaniepic.addEventListener('click', function() {
   loadPokemon('stephanie', 'palkia');
   loadPokemon('stephanie', 'barbaracle');
 
+<<<<<<< HEAD
   pokemonOne.removeAttribute('style');
   pokemonTwo.removeAttribute('style');
   pokemonThree.removeAttribute('style');
 
+=======
+>>>>>>> a55a321c9ce7542e23453db690d353b406702d56
   pokemonOne.style.backgroundColor = '#4fd7f4';
   pokemonTwo.style.backgroundColor = '#4fd7f4';
   pokemonThree.style.backgroundColor = '#4fd7f4';

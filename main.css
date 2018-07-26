@@ -6,14 +6,14 @@ body {
   font-family: 'Archivo Narrow', sans-serif;
 }
 
-span, h1{
-  font-family: 'Archivo Narrow', sans-serif !important;
+span, h1, h3{
+  font-family: 'Archivo Narrow', sans-serif;
 }
 /* ========================================== */
 
 /* TRAINER TOP SECTION */
 .container {
-  max-width: 90%;
+  max-width: 88%;
   margin: 0 auto;
 }
 
@@ -107,6 +107,20 @@ span, h1{
 /* ================================== */
 
 /* POKEMON INFO BOTTOM SECTION */
+h1 {
+  letter-spacing: 6px;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000, 5px 5px 86px blue;
+}
+
+#cprt{
+  position: relative;
+  bottom: 13%;
+  color: #fff;
+  left: 73%;
+}
+
 .pokemon-grid {
   margin-top: 3.52%;
   display: grid;
@@ -141,10 +155,4 @@ span, h1{
   bottom: 25%;
   left: 35%;
   z-index: -1;
-}
-
-h1 {
-  font-size: 5em;
-  color: #fff;
-  text-shadow: 1px 1px 5px #000, 5px 5px 80px blue;
 }

@@ -3,6 +3,10 @@ body {
   background: url('images/gym_pic.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+span, h1{
   font-family: 'Archivo Narrow', sans-serif !important;
 }
 /* ========================================== */

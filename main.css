@@ -59,25 +59,27 @@ span, h1{
   margin-left: 15%;
   margin-top: 3%;
   padding-top: 1.4%;
+  color: #D76475;
 }
 
 #lassMove {
   margin-left: 5.16%;
   margin-top: 3%;
   padding-top: 1.4%;
+  color: #4fd7f4;
 }
 
 #ashMove {
   margin-left: 9%;
   margin-top: 3%;
   padding-top: 1.4%;
+  color: #00e68a;
 }
 
 .move {
   position: fixed;
   margin-left: 12%;
-  bottom: 85%;
-  color: #fc7148;
+  bottom: 80%;
   letter-spacing: 0.8px;
   background: rgba(0, 0, 0, .35);
   border-radius: 10%;

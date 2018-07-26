@@ -29,7 +29,7 @@ var infoGrid = document.getElementsByClassName('move');
 var trainerRed = document.getElementById('red');
 
 trainerRed.addEventListener('click',function() {
-  
+
     loadPokemon('red', 'pikachu');
     loadPokemon('red', 'mewtwo');
     loadPokemon('red', 'rapidash');

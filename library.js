@@ -24,7 +24,11 @@ var pokemonOne = document.getElementById('pokemon1');
 var pokemonTwo = document.getElementById('pokemon2');
 var pokemonThree = document.getElementById('pokemon3');
 
-document.getElementById('red').addEventListener('click',function() {
+var infoGrid = document.getElementsByClassName('move');
+
+var trainerRed = document.getElementById('red')
+
+trainerRed.addEventListener('click',function() {
     loadPokemon('red', 'pikachu');
     loadPokemon('red', 'mewtwo');
     loadPokemon('red', 'rapidash');
@@ -32,7 +36,10 @@ document.getElementById('red').addEventListener('click',function() {
     pokemonOne.style.backgroundColor = '#D76475';
     pokemonTwo.style.backgroundColor = '#D76475';
     pokemonThree.style.backgroundColor = '#D76475';
-})
+
+    trainerRed.classList.remove("blur");
+    infoGrid[0].classList.remove("hidden");
+});
 
 document.getElementById('stephanie').addEventListener('click',function() {
     loadPokemon('stephanie', 'type-null');
@@ -42,7 +49,7 @@ document.getElementById('stephanie').addEventListener('click',function() {
     pokemonOne.style.backgroundColor = '#4fd7f4';
     pokemonTwo.style.backgroundColor = '#4fd7f4';
     pokemonThree.style.backgroundColor = '#4fd7f4';
-})
+});
 
 document.getElementById('ashCatchNone').addEventListener('click',function() {
     loadPokemon('ash', 'jolteon');
@@ -52,7 +59,7 @@ document.getElementById('ashCatchNone').addEventListener('click',function() {
     pokemonOne.style.backgroundColor = '#00e68a';
     pokemonTwo.style.backgroundColor = '#00e68a';
     pokemonThree.style.backgroundColor = '#00e68a';
-})
+});
 
 var pikachuBall = document.getElementById('pikachu-ball');
 pikachuBall.addEventListener('click', function() {
@@ -197,24 +204,24 @@ function loadPokemon(trainer, pokemonName) {
 //   console.log(allPokemon);
 // }
 //
-function updateScreen(currentPokemon) {
-  let statList = document.getElementById('stat-list');
-  let listItems = document.getElementsByClassName('list-item');
-  let pokedexImage = document.getElementById('pokedex-image');
-  let pokedexInfoScreen = document.getElementById('pokedex-info');
-
-  for (obj in allPokemon) {
-    if (allPokemon[obj]['name'] == currentPokemon) {
-      pokedexInfoScreen.style.display = 'block';
-
-      pokedexImage.src = "images/" + `${currentPokemon}.gif`;
-      listItems[0].innerHTML = "Name: " + allPokemon[obj]['name'].toUpperCase();
-      listItems[1].innerHTML = "Base Attack: " + allPokemon[obj]['atk'];
-      listItems[2].innerHTML = "Base Defense: " + allPokemon[obj]['def'];
-      listItems[3].innerHTML = "Base HP: " + allPokemon[obj]['hp'];
-      listItems[4].innerHTML = "Abilities: " + allPokemon[obj]['abilities'];
-
-      break;
-    }
-  }
-}
+// function updateScreen(currentPokemon) {
+//   let statList = document.getElementById('stat-list');
+//   let listItems = document.getElementsByClassName('list-item');
+//   let pokedexImage = document.getElementById('pokedex-image');
+//   let pokedexInfoScreen = document.getElementById('pokedex-info');
+//
+//   for (obj in allPokemon) {
+//     if (allPokemon[obj]['name'] == currentPokemon) {
+//       pokedexInfoScreen.style.display = 'block';
+//
+//       pokedexImage.src = "images/" + `${currentPokemon}.gif`;
+//       listItems[0].innerHTML = "Name: " + allPokemon[obj]['name'].toUpperCase();
+//       listItems[1].innerHTML = "Base Attack: " + allPokemon[obj]['atk'];
+//       listItems[2].innerHTML = "Base Defense: " + allPokemon[obj]['def'];
+//       listItems[3].innerHTML = "Base HP: " + allPokemon[obj]['hp'];
+//       listItems[4].innerHTML = "Abilities: " + allPokemon[obj]['abilities'];
+//
+//       break;
+//     }
+//   }
+// }

@@ -127,3 +127,15 @@ body{
   border-bottom-right-radius: 10%;
   border-top-left-radius: 10%;
 }
+
+#title{
+  position: relative;
+  bottom: 25%;
+  left: 35%;
+  z-index: -1;
+}
+
+h1{
+  font-size: 5em;
+  color: #fff;
+}

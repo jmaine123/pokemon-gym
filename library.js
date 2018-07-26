@@ -20,14 +20,32 @@ class Trainer {
 
 }
 
+document.getElementById('red').addEventListener('mouseover',function() {
+    loadPokemon('red', 'pikachu');
+    loadPokemon('red', 'mewtwo');
+    loadPokemon('red', 'rapidash');
+})
+
+document.getElementById('stephanie').addEventListener('mouseover',function() {
+    loadPokemon('stephanie', 'type-null');
+    loadPokemon('stephanie', 'palkia');
+    loadPokemon('stephanie', 'barbaracle');
+})
+
+document.getElementById('ashCatchNone').addEventListener('mouseover',function() {
+    loadPokemon('ash', 'jolteon');
+    loadPokemon('ash', 'primeape');
+    loadPokemon('ash', 'scizor');
+})
+
 var pikachuBall = document.getElementById('pikachu-ball');
 pikachuBall.addEventListener('click', function() {
-  loadPokemon('red','pikachu');
+  loadPokemon('red', 'pikachu');
 });
 
 function loadPokemon(trainer, pokemonName) {
   let pokemon = {
-    abilities:[]
+    abilities: []
   };
 
   let xhttp = new XMLHttpRequest();
@@ -40,19 +58,53 @@ function loadPokemon(trainer, pokemonName) {
       pokemon.atk = parsedObject['stats'][4]['base_stat'];
       pokemon.def = parsedObject['stats'][3]['base_stat'];
 
-      console.log(pokemon.name)
+      console.log(pokemon.name);
 
       let abilityArray = parsedObject['abilities'];
       for (obj in abilityArray) {
         pokemon.abilities.push(abilityArray[obj]['ability']['name']);
       }
 
-      alert('Data Loaded');
+      p_arr = [pokemon.name, pokemon.hp, pokemon.atk, pokemon.def, abilityArray];
+
+      console.log(p_arr)
+
+
+      if(pokemonName == "pikachu" || pokemonName == "jolteon" || pokemonName =="type-null"){
+        for (obj in p_arr){
+          var stats = document.getElementsByClassName('pokemon1-stats')
+          stats[obj].innerHTML = p_arr[obj];
+
+        }
+      }
+      else if (pokemonName == "mewtwo" || pokemonName == "primeape" || pokemonName =="palkia") {
+        for (obj in p_arr){
+          var stats = document.getElementsByClassName('pokemon2-stats')
+          stats[obj].innerHTML = p_arr[obj];
+
+        }
+      }
+      else if(pokemonName == "rapidash" || pokemonName == "scizor" || pokemonName =="barbaracle"){
+        for (obj in p_arr){
+          var stats = document.getElementsByClassName('pokemon3-stats')
+          stats[obj].innerHTML = p_arr[obj];
+
+        }
+      }
 
     }
   };
   xhttp.open("GET", `https://raw.githubusercontent.com/stephanie-vitalherne/data/master/${pokemonName}.json`, true);
   xhttp.send();
+
+  if (trainer == 'red') {
+    redsPokemon.push(pokemon);
+  } else if(trainer == 'stephanie') {
+    stephaniesPokemon.push(pokemon);
+  } else if(trainer == 'ash') {
+    ashsPokemon.push(pokemon);
+  }
+
 }
 
 
@@ -95,24 +147,24 @@ function loadPokemon(trainer, pokemonName) {
 //   console.log(allPokemon);
 // }
 //
-// function updateScreen(currentPokemon) {
-//   let statList = document.getElementById('stat-list');
-//   let listItems = document.getElementsByClassName('list-item');
-//   let pokedexImage = document.getElementById('pokedex-image');
-//   let pokedexInfoScreen = document.getElementById('pokedex-info');
-//
-//   for (obj in allPokemon) {
-//     if (allPokemon[obj]['name'] == currentPokemon) {
-//       pokedexInfoScreen.style.display = 'block';
-//
-//       pokedexImage.src = "images/" + `${currentPokemon}.gif`;
-//       listItems[0].innerHTML = "Name: " + allPokemon[obj]['name'].toUpperCase();
-//       listItems[1].innerHTML = "Base Attack: " + allPokemon[obj]['atk'];
-//       listItems[2].innerHTML = "Base Defense: " + allPokemon[obj]['def'];
-//       listItems[3].innerHTML = "Base HP: " + allPokemon[obj]['hp'];
-//       listItems[4].innerHTML = "Abilities: " + allPokemon[obj]['abilities'];
-//
-//       break;
-//     }
-//   }
-// }
+function updateScreen(currentPokemon) {
+  let statList = document.getElementById('stat-list');
+  let listItems = document.getElementsByClassName('list-item');
+  let pokedexImage = document.getElementById('pokedex-image');
+  let pokedexInfoScreen = document.getElementById('pokedex-info');
+
+  for (obj in allPokemon) {
+    if (allPokemon[obj]['name'] == currentPokemon) {
+      pokedexInfoScreen.style.display = 'block';
+
+      pokedexImage.src = "images/" + `${currentPokemon}.gif`;
+      listItems[0].innerHTML = "Name: " + allPokemon[obj]['name'].toUpperCase();
+      listItems[1].innerHTML = "Base Attack: " + allPokemon[obj]['atk'];
+      listItems[2].innerHTML = "Base Defense: " + allPokemon[obj]['def'];
+      listItems[3].innerHTML = "Base HP: " + allPokemon[obj]['hp'];
+      listItems[4].innerHTML = "Abilities: " + allPokemon[obj]['abilities'];
+
+      break;
+    }
+  }
+}

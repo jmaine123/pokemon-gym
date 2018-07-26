@@ -17,7 +17,7 @@ body{
 }
 
 .trainer-grid div{
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 
@@ -25,6 +25,10 @@ body{
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 75% 25%;
+  -webkit-box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.87);
+  -moz-box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.87);
+  box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.87);
+  border-radius: 7%;
 }
 
 
@@ -40,62 +44,72 @@ body{
   max-width: 44%;
 }
 
-#lassTrainer{
-  max-width: 50%;
+#lassTrainer, #ashTrainer{
+  max-width: 52%;
 }
 
-#ashTrainer{
-  max-width: 50%;
-}
 
-#imageMove{
+#redMove{
   margin-left: 15%;
   margin-top: 3%;
   padding-top: 1.4%;
 }
 
 #lassMove{
-  margin-left: 7%;
+  margin-left: 5.16%;
+  margin-top: 3%;
+  padding-top: 1.4%;
+}
+
+#ashMove{
+  margin-left: 9%;
   margin-top: 3%;
   padding-top: 1.4%;
 }
 
 .move{
   position: fixed;
-  margin-left: 13%;
+  margin-left: 12%;
   bottom:85%;
   color: #fc7148;
   letter-spacing: 0.8px;
+  background: rgba(0, 0, 0, .35);
+  border-radius: 10%;
+  padding: 0.62%;
 }
 
 .ball{
-  max-width: 45%;
+  max-width: 42%;
   margin-left: 35%;
-  margin-top: 25%;
+  margin-top: 22%;
 }
 
 .lassBall{
-  max-width: 45%;
-  margin-top: 50%;
+  max-width: 42%;
+  margin-top: 25%;
   margin-left: 35%;
 }
 .ashBall{
-  max-width: 45%;
-  margin-top: 40%;
-  margin-left: 26%;
+  max-width: 42%;
+  margin-top: 21.45%;
+  margin-left: 25%;
+  padding-bottom: 20px;
 }
 
 /* ================================== */
 /* POKEMON INFO BOTTOM SECTION */
 .pokemon-grid{
-  margin-top: 2%;
+  margin-top: 1.12%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 30vh;
+  grid-gap: 0.5%;
 }
 
 .pokemon-grid div{
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 10%;
 }
 
 .list {
@@ -109,5 +123,19 @@ body{
 
 .list:hover{
   color: white;
-  background: rgba(0, 0, 0, .5)
+  background: rgba(0, 0, 0, .5);
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 10%;
+}
+
+#title{
+  position: relative;
+  bottom: 25%;
+  left: 35%;
+  z-index: -1;
+}
+
+h1{
+  font-size: 5em;
+  color: #fff;
 }

@@ -32,6 +32,24 @@ document.getElementById('red').addEventListener('click',function() {
     pokemonOne.style.backgroundColor = '#D76475';
     pokemonTwo.style.backgroundColor = '#D76475';
     pokemonThree.style.backgroundColor = '#D76475';
+
+    var pikachuBall = document.getElementById('pikachu-ball');
+    pikachuBall.addEventListener('click', function() {
+      pokemonOne.style.backgroundImage = "url('images/pikachu_lightning.gif')"
+      pokemonOne.style.backgroundSize = '100% 100%';
+    });
+
+    var mewtwo = document.getElementById('mewtwo-ball');
+    mewtwo.addEventListener('click', function() {
+      pokemonTwo.style.backgroundImage = "url('images/mewtwo_fire.gif')"
+      pokemonTwo.style.backgroundSize = '100% 100%';
+    });
+
+    var rapidash = document.getElementById('rapidash-ball');
+    rapidash.addEventListener('click', function() {
+      pokemon3.style.backgroundImage = "url('images/rapidash.gif')"
+      pokemon3.style.backgroundSize = '100% 100%';
+    });
 })
 
 document.getElementById('stephanie').addEventListener('click',function() {
@@ -42,6 +60,24 @@ document.getElementById('stephanie').addEventListener('click',function() {
     pokemonOne.style.backgroundColor = '#4fd7f4';
     pokemonTwo.style.backgroundColor = '#4fd7f4';
     pokemonThree.style.backgroundColor = '#4fd7f4';
+
+    var typeNull = document.getElementById('type-null-ball');
+    typeNull.addEventListener('click', function() {
+      pokemonOne.style.backgroundImage = "url('images/type-null.gif')"
+      pokemonOne.style.backgroundSize = '100% 100%';
+    });
+
+    var palkia = document.getElementById('palkia-ball');
+    palkia.addEventListener('click', function() {
+      pokemonTwo.style.backgroundImage = "url('images/palkia.gif')";
+      pokemonTwo.style.backgroundSize = '100% 100%';
+    });
+
+    var barbaracle = document.getElementById('barbaracle-ball');
+    barbaracle.addEventListener('click', function() {
+      pokemonThree.style.backgroundImage = "url('images/barbaracle.gif')";
+      pokemonThree.style.backgroundSize = '100% 100%';
+    });
 })
 
 document.getElementById('ashCatchNone').addEventListener('click',function() {
@@ -52,46 +88,64 @@ document.getElementById('ashCatchNone').addEventListener('click',function() {
     pokemonOne.style.backgroundColor = '#00e68a';
     pokemonTwo.style.backgroundColor = '#00e68a';
     pokemonThree.style.backgroundColor = '#00e68a';
+
+    var jolteon = document.getElementById('jolteon-ball');
+    jolteon.addEventListener('click', function() {
+      pokemonOne.style.backgroundImage = "url('images/jolteon_shock.gif')"
+      pokemonOne.style.backgroundSize = '100% 100%';
+    });
+
+    var primeape = document.getElementById('primeape-ball');
+    primeape.addEventListener('click', function() {
+      pokemonTwo.style.backgroundImage = "url('images/primeape_punching.gif')";
+      pokemonTwo.style.backgroundSize = '100% 100%';
+    });
+
+    var scizor = document.getElementById('scizor-ball');
+    scizor.addEventListener('click', function() {
+      pokemonThree.style.backgroundImage = "url('images/scizor.gif')";
+      pokemonThree.style.backgroundSize = '100% 100%';
+    });
 })
 
-var pikachuBall = document.getElementById('pikachu-ball');
-pikachuBall.addEventListener('click', function() {
-  firstPokeBackground = document.getElementById('pokemon1')
-  firstPokeBackground.style.backgroundImage = "url('images/pikachu_lightning.gif')"
-  firstPokeBackground.style.backgroundSize = '100% 100%';
-});
+// var pikachuBall = document.getElementById('pikachu-ball');
+// pikachuBall.addEventListener('click', function() {
+//   firstPokeBackground = document.getElementById('pokemon1')
+//   firstPokeBackground.style.backgroundImage = "url('images/pikachu_lightning.gif')"
+//   firstPokeBackground.style.backgroundSize = '100% 100%';
+// });
 
-var mewtwo = document.getElementById('mewtwo-ball');
-mewtwo.addEventListener('click', function() {
-  secondPokeBackground = document.getElementById('pokemon2')
-  secondPokeBackground.style.backgroundImage = "url('images/mewtwo_fire.gif')"
-  secondPokeBackground.style.backgroundSize = '100% 100%';
-});
+// var mewtwo = document.getElementById('mewtwo-ball');
+// mewtwo.addEventListener('click', function() {
+//   secondPokeBackground = document.getElementById('pokemon2')
+//   secondPokeBackground.style.backgroundImage = "url('images/mewtwo_fire.gif')"
+//   secondPokeBackground.style.backgroundSize = '100% 100%';
+// });
 
-var rapidash = document.getElementById('rapidash-ball');
-rapidash.addEventListener('click', function() {
-  thirdPokeBackground = document.getElementById('pokemon3')
-  thirdPokeBackground.style.backgroundImage = "url('images/rapidash.gif')"
-  thirdPokeBackground.style.backgroundSize = '100% 100%';
-});
+// var rapidash = document.getElementById('rapidash-ball');
+// rapidash.addEventListener('click', function() {
+//   thirdPokeBackground = document.getElementById('pokemon3')
+//   thirdPokeBackground.style.backgroundImage = "url('images/rapidash.gif')"
+//   thirdPokeBackground.style.backgroundSize = '100% 100%';
+// });
 
-var typeNull = document.getElementById('type-null-ball');
-typeNull.addEventListener('click', function() {
-  firstPokeBackground.style.backgroundImage = "url('images/type-null.gif')"
-  firstPokeBackground.style.backgroundSize = '100% 100%';
-});
+// var typeNull = document.getElementById('type-null-ball');
+// typeNull.addEventListener('click', function() {
+//   firstPokeBackground.style.backgroundImage = "url('images/type-null.gif')"
+//   firstPokeBackground.style.backgroundSize = '100% 100%';
+// });
 
-var palkia = document.getElementById('palkia-ball');
-palkia.addEventListener('click', function() {
-  secondPokeBackground.style.backgroundImage = "url('images/palkia.gif')"
-  secondPokeBackground.style.backgroundSize = '100% 100%';
-});
+// var palkia = document.getElementById('palkia-ball');
+// palkia.addEventListener('click', function() {
+//   secondPokeBackground.style.backgroundImage = "url('images/palkia.gif')"
+//   secondPokeBackground.style.backgroundSize = '100% 100%';
+// });
 
-var barbaracle = document.getElementById('barbaracle-ball');
-barbaracle.addEventListener('click', function() {
-  thirdPokeBackground.style.backgroundImage = "url('images/barbaracle.gif')"
-  thirdPokeBackground.style.backgroundSize = '100% 100%';
-});
+// var barbaracle = document.getElementById('barbaracle-ball');
+// barbaracle.addEventListener('click', function() {
+//   thirdPokeBackground.style.backgroundImage = "url('images/barbaracle.gif')"
+//   thirdPokeBackground.style.backgroundSize = '100% 100%';
+// });
 
 function loadPokemon(trainer, pokemonName) {
   let pokemon = {

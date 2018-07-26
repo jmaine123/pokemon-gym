@@ -70,7 +70,7 @@ trainerStephanie.addEventListener('click', function() {
   loadPokemon('stephanie', 'type-null');
   loadPokemon('stephanie', 'palkia');
   loadPokemon('stephanie', 'barbaracle');
-  
+
   pokemonOne.style.backgroundColor = '#4fd7f4';
   pokemonTwo.style.backgroundColor = '#4fd7f4';
   pokemonThree.style.backgroundColor = '#4fd7f4';
